@@ -1,4 +1,4 @@
-public class  Hello{
+public class  TaskWeek1{
     public static void main(String[] args) {
         /*1. Write a program that prints Hello World! to the console. Save the program as Hello.java. */
         System.out.println("Hello World!");
@@ -16,7 +16,7 @@ public class  Hello{
            String. Don't forget: use \"
            instead of " !
            '' is not the same as " */
-        System.out.print("A \"quoted\" String is\n 'much' better if you learn\n the rules of \"escape sequences.\"\n");
+        System.out.print("A \"quoted\" String is\n'much' better if you learn\n the rules of \"escape sequences.\"\n");
         System.out.print("Also, \"\" represents an empty\nString. Don't forget: use \\\"\ninstead of \" !\n'' is not the same as \" * /\n");
         /*4. WAP that prints the following pattern:
             *
