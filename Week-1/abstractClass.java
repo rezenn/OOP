@@ -75,3 +75,74 @@ class Apple extends SmartPhone {
     }
 
 }
+/*
+ * You are building a shape hierarchy for a drawing application. Design an
+ * abstract class named "Draw" with the following abstract methods:
+ * calculateVolume(): This method should calculate and return the area of the
+ * shape
+ * calculateArea(): This method should calculate and return the area of the
+ * shape.
+ * calculatePerimeter(): This method should calculate and return the perimeter
+ * of the shape.
+ * Implement the abstract class and provide concrete implementations for the
+ * abstract methods.
+ * Create subclasses for different shapes such as "circle," "rectangle," and
+ * "triangle."
+ * Each subclass should provide specific implementations for calculating the
+ * volume, area and perimeter of that shape.
+ * Create instances of each shape class and demonstrate how you can calculate
+ * their respective volume, areas and perimeters.
+ */
+
+abstract class draw {
+
+    abstract float calculateArea();
+
+    abstract float calculatePerimeter();
+}
+
+class circle extends draw {
+    float radius = 10;
+
+    @Override
+    float calculateArea() {
+        return 22 / 7 * radius * radius;
+    }
+
+    @Override
+    float calculatePerimeter() {
+        return 2 * 22 / 7 * radius;
+    }
+}
+
+class rectangle extends draw {
+    float length = 231;
+    float breadth = 312;
+
+    @Override
+    float calculateArea() {
+        return length * breadth;
+    }
+
+    @Override
+    float calculatePerimeter() {
+        return 2 * (length * breadth);
+    }
+}
+
+class triangle extends draw {
+    float length1 = 21;
+    float length2 = 31;
+    float length3 = 22;
+    float height = 12;
+
+    @Override
+    float calculateArea() {
+        return 1 / 2 * (length1 * height);
+    }
+
+    @Override
+    float calculatePerimeter() {
+        return length1 + length2 + length3;
+    }
+}
